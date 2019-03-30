@@ -124,7 +124,7 @@ function renderChoices() {
 
 function renderGuessResults() {
 	if (quiz.guessCorrect) {
-		document.getElementsByClassName("buttons")[0].innerHTML += "<p id='answer' class='true'><strong>Correct!<br></strong></p>";
+		document.getElementsByClassName("buttons")[0].innerHTML += "<p id='answer'><strong>Correct!<br></strong></p>";
 	} else {
 		document.getElementsByClassName("buttons")[0].innerHTML += "<p id='answer' class='false'><strong>False:<br></strong></p>";
 	}
