@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trivia App</title>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<meta content="width=device-width, initial-scale=1; user-scalable=0;" name="viewport" />
+</head>
+<body>
+			<p id="progress"></p>
+			<p id="question"></p>
+	<div class="grid">
+		<div id="quiz">
+			<div class="buttons">
+				<button id="btn0"><span id="choice0"></span></button>
+				<button id="btn1"><span id="choice1"></span></button>
+				<button id="btn2"><span id="choice2"></span></button>
+				<button id="btn3"><span id="choice3"></span></button>
+				<br>
+			</div>
+		</div>
+	</div>
+	<script src="js/quiz_controller.js"></script>
+	<script src="js/question.js"></script>
+	<script src="js/app.js"></script>
+	<script type="text/javascript">
+		var images = new Array()
+		function preload() {
+			for (i = 0; i < preload.arguments.length; i++) {
+				images[i] = new Image()
+				images[i].src = preload.arguments[i]
+			}
+		}
+		preload(
+			"images/Bosnia_and_Herzegovina.svg",
+			"images/Celsus.jpg",
+			"images/Costa_Rica.svg"
+		)
+	</script>
+</body>
+</html>
