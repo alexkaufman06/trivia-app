@@ -79,11 +79,11 @@ function renderQuestion() {
 	var element = document.getElementById("question");
 	if (quiz.showAnswer) {
 		if (quiz.questionIndex != questions.length - 1) {
+			renderGuessResults();
 			document.getElementsByClassName("buttons")[0].innerHTML += "<button id='next' class='hover'>Next</button>";
-			renderGuessResults();
 		} else {
-			document.getElementsByClassName("buttons")[0].innerHTML += "<button id='next' class='hover'>Results</button>";
 			renderGuessResults();
+			document.getElementsByClassName("buttons")[0].innerHTML += "<button id='next' class='hover'>Results</button>";
 		}
 	} else {
 		element.innerHTML = "";
@@ -124,9 +124,9 @@ function renderChoices() {
 
 function renderGuessResults() {
 	if (quiz.guessCorrect) {
-		document.getElementsByClassName("buttons")[0].innerHTML += "<p id='answer'><strong>Correct!<br></strong></p>";
+		document.getElementsByClassName("buttons")[0].innerHTML += "<p id='answer' class='true'><strong><span>C</span><span>O</span><span>R</span><span>R</span><span>E</span><span>C</span><span>T</span><br></strong></p>";
 	} else {
-		document.getElementsByClassName("buttons")[0].innerHTML += "<p id='answer' class='false'><strong>False:<br></strong></p>";
+		document.getElementsByClassName("buttons")[0].innerHTML += "<p id='answer' class='false'><strong>False<br></strong></p>";
 	}
 }
 
