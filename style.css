@@ -35,8 +35,6 @@ body:before {
   border-radius: 100%;
   background: transparent;
   display: block;
-  box-shadow: 500px 500px 150px 100px rgba(255, 255, 255, 0.6),
-    -550px 0 300px 200px rgba(255, 255, 255, 0.6);
 }
 
 p {
@@ -44,7 +42,50 @@ p {
   -webkit-font-smoothing: antialiased;
 }
 
+/* CORRECT ANIMATION */
 
+#answer strong span {
+  position: relative;
+  top: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+  -webkit-animation: bounce 0.5s ease infinite alternate;
+  text-shadow: 0 1px 0 #90ee90, 0 2px 0 #90ee90, 0 4px 0 #ccc,
+  0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,
+  0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+#answer strong span:nth-child(2) {
+  -webkit-animation-delay: 0.1s;
+}
+
+#answer strong span:nth-child(3) {
+  -webkit-animation-delay: 0.2s;
+}
+
+#answer strong span:nth-child(4) {
+  -webkit-animation-delay: 0.3s;
+}
+
+#answer strong span:nth-child(5) {
+  -webkit-animation-delay: 0.4s;
+}
+
+#answer strong span:nth-child(6) {
+  -webkit-animation-delay: 0.5s;
+}
+
+#answer strong span:nth-child(7) {
+  -webkit-animation-delay: 0.6s;
+}
+
+/* ANIMATION */
+@-webkit-keyframes bounce {
+  100% {
+    top: 5px;
+   	text-shadow: 0 20px 10px rgba(0, 0, 0, 0.2);
+  }
+}
 
 .grid {
 	width: 80%;
@@ -71,12 +112,9 @@ p {
 	margin-top: 30px;
 }
 
-/*.true {
-	border: #034638 4px;
-	border-style: solid;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}*/
+.true {
+	color: green;
+}
 
 .false {
 	color: #D44949;
