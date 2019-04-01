@@ -46,6 +46,7 @@ p {
 
 #answer strong span {
   position: relative;
+  font-size: 25px;
   top: 10px;
   margin-bottom: 10px;
   display: inline-block;
@@ -118,6 +119,9 @@ p {
 
 .false {
 	color: #D44949;
+	font-size: 25px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 .answer {
@@ -161,6 +165,8 @@ button:focus {
 	font-size: 30px;
 }
 
+/*  MOBILE  */
+
 @media screen and (max-width: 415px) {
 	body {
 		overflow: hidden;
@@ -177,12 +183,34 @@ button:focus {
 
 	#next {
 		margin-left: 15%;
+    margin-top: -15px;
+    animation-delay: 0.7s;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 	}
 
 	#answer {
 		margin-left: 2%;
     margin-right: -15%;
     line-height: 20px;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+	}
+
+	#explanation {
+		margin-left: 5%;
+    margin-top: -10px;
+		width: 105%;
+		line-height: 20px;
+		animation-delay: 0.35s;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 	}
 
 	#answer-correct {
@@ -210,3 +238,33 @@ button:focus {
 		padding-right: 15px;
 	}
 }
+
+/*  FADE IN ANIMATION  */
+
+@-webkit-keyframes fadeInUp {
+  0% {
+     opacity: 0;
+     -webkit-transform: translateY(20px);
+  }
+  100% {
+     opacity: 1;
+     -webkit-transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUP {
+  0% {
+     opacity: 0;
+     transform: translateY(20px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+

@@ -67,7 +67,7 @@ function populate() {
 
 function renderExplanation() {
 	if (quiz.showAnswer) {
-		var element = document.getElementById("answer");
+		var element = document.getElementById("explanation");
 		element.innerHTML += quiz.getQuestionIndex().explanation;
 	}
 }
@@ -80,10 +80,10 @@ function renderQuestion() {
 	if (quiz.showAnswer) {
 		if (quiz.questionIndex != questions.length - 1) {
 			renderGuessResults();
-			document.getElementsByClassName("buttons")[0].innerHTML += "<button id='next' class='hover'>Next</button>";
+			document.getElementsByClassName("buttons")[0].innerHTML += "<button id='next' class='hover fadeInUp'>Next</button>";
 		} else {
 			renderGuessResults();
-			document.getElementsByClassName("buttons")[0].innerHTML += "<button id='next' class='hover'>Results</button>";
+			document.getElementsByClassName("buttons")[0].innerHTML += "<button id='next' class='hover fadeInUp'>Results</button>";
 		}
 	} else {
 		element.innerHTML = "";
@@ -124,9 +124,9 @@ function renderChoices() {
 
 function renderGuessResults() {
 	if (quiz.guessCorrect) {
-		document.getElementsByClassName("buttons")[0].innerHTML += "<p id='answer' class='true'><strong><span>C</span><span>O</span><span>R</span><span>R</span><span>E</span><span>C</span><span>T</span><br></strong></p>";
+		document.getElementsByClassName("buttons")[0].innerHTML += "<p id='answer' class='true fadeInUp'><strong><span>C</span><span>O</span><span>R</span><span>R</span><span>E</span><span>C</span><span>T</span><br></strong></p><p id='explanation' class='fadeInUp'></p>";
 	} else {
-		document.getElementsByClassName("buttons")[0].innerHTML += "<p id='answer' class='false'><strong>False<br></strong></p>";
+		document.getElementsByClassName("buttons")[0].innerHTML += "<p id='answer' class='false fadeInUp'><strong>False<br></strong></p><p id='explanation' class='fadeInUp'></p>";
 	}
 }
 
@@ -147,6 +147,7 @@ function next() {
 		quiz.toggleAnswer();
 		if (document.getElementById('answer')) {
 			document.getElementById('answer').remove();
+			document.getElementById('explanation').remove();
 		}
 		populate();
 	}
