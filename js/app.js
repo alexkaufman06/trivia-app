@@ -77,6 +77,7 @@ function renderQuestion() {
 		document.getElementById("next").remove();
 	}
 	var element = document.getElementById("question");
+	element.className += "fadeInUp";
 	if (quiz.showAnswer) {
 		if (quiz.questionIndex != questions.length - 1) {
 			renderGuessResults();
@@ -98,6 +99,7 @@ function renderChoices() {
 		var element = document.getElementById("choice" + i);
 		if (choices[i] == quiz.getQuestionIndex().answer) {
 			if (!quiz.showAnswer) {
+				element.className += "fadeInUp";
 				guess("btn" + i, choices[i]);
 				if (detectmobile() === false) {
 					document.getElementById("btn" + i).className = "hover";
@@ -106,12 +108,15 @@ function renderChoices() {
 				}
 			} else {
 				document.getElementById("btn" + i).className = "";
+				element.className = "";
 			}
 			element.innerHTML = choices[i];
 		} else if (quiz.showAnswer) {
 			document.getElementById("btn" + i).className = "answer";
+			element.className = "";
 		} else {
 			element.innerHTML = choices[i]
+			element.className += "fadeInUp";
 			if (detectmobile() === false) {
 				document.getElementById("btn" + i).className = "hover";
 			} else {
@@ -137,6 +142,8 @@ function guess(id, guess) {
 		quiz.toggleAnswer();
 		populate();
 		next();
+		var element = document.getElementById("question");
+		element.className = "";
 	}
 };
 
