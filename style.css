@@ -42,13 +42,79 @@ p {
   -webkit-font-smoothing: antialiased;
 }
 
-/* CORRECT ANIMATION */
+/* ANIMATIONS */
+
+@-webkit-keyframes bounce {
+  100% {
+    top: 5px;
+    text-shadow: 0 20px 10px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  0% {
+     opacity: 0;
+     -webkit-transform: translateY(20px);
+  }
+  100% {
+     opacity: 1;
+     -webkit-transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUP {
+  0% {
+     opacity: 0;
+     transform: translateY(20px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
 
 #answer {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+}
+
+#choice0 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-delay: 0.35s;
+}
+
+#choice1 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-delay: 0.7s;
+}
+
+#choice2 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-delay: 1.05s;
+}
+
+#choice3 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-delay: 1.4s;
 }
 
 #answer strong span {
@@ -103,13 +169,7 @@ p {
   animation-fill-mode: both;
 }
 
-/* ANIMATION */
-@-webkit-keyframes bounce {
-  100% {
-    top: 5px;
-   	text-shadow: 0 20px 10px rgba(0, 0, 0, 0.2);
-  }
-}
+/* CLOSE ANIMATIONS */
 
 .grid {
 	width: 80%;
@@ -130,6 +190,10 @@ p {
 #question {
 	font-family: sans-serif;
 	font-size: 30px;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 .buttons {
@@ -246,34 +310,5 @@ button:focus {
 		padding-left: 15px;
 		padding-right: 15px;
 	}
-}
-
-/*  FADE IN ANIMATION  */
-
-@-webkit-keyframes fadeInUp {
-  0% {
-     opacity: 0;
-     -webkit-transform: translateY(20px);
-  }
-  100% {
-     opacity: 1;
-     -webkit-transform: translateY(0);
-  }
-}
-
-@keyframes fadeInUP {
-  0% {
-     opacity: 0;
-     transform: translateY(20px);
-  }
-  100% {
-     opacity: 1;
-     transform: translateY(0);
-  }
-}
-
-.fadeInUp {
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp;
 }
 
