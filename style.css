@@ -306,7 +306,7 @@ button:focus {
 	#question {
 		font-size: 25px;
 		line-height: 25px;
-		min-height: 150px;
+		height: 150px;
 		padding-left: 15px;
 		padding-right: 15px;
 	}
