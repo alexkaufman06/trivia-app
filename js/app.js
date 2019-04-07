@@ -192,7 +192,7 @@ var questions = [
 							  ],
 							  "4",
 							  "There are 4 sharps (F#, C#, G#, D#) in the key of E major."),
-	new Question("What country is this?<br><img class='img-fluid' src='images/Bosnia_and_Herzegovina.svg' style='width: 240px;'><style>#question{margin-top: -10px}</style>",
+	new Question("What country is this?<br><img class='img-fluid' src='images/Bosnia_and_Herzegovina.svg' style='width: 230px;'>",
 							  [
 							  	"Jamaica",
 							  	"Solomon Islands",
@@ -201,7 +201,7 @@ var questions = [
 							  ],
 							  "Bosnia and Herzegovina",
 							  "Bosnia and Herzegovina is a country on the Balkan Peninsula in southeastern Europe."),
-	new Question("What country is this?<br><img class='img-fluid' src='images/Costa_Rica.svg' style='width: 215px'><style>#question{margin-top: -10px}</style>",
+	new Question("What country is this?<br><img class='img-fluid' src='images/Costa_Rica.svg' style='width: 215px'>",
 							  [
 							  	"Netherlands",
 							  	"Trinidad and Tobago",
@@ -300,7 +300,7 @@ var questions = [
 							  ],
 							  "Stoicism",
 							  "While Stoic physics are largely drawn from the teachings of the philosopher Heraclitus, they are heavily influenced by certain teachings of Socrates."),
-	new Question("Where is this monument located?<br><img class='img-fluid' src='images/Celsus.jpg' style='width: 230px;'>",
+	new Question("Where is this monument?<br><img class='img-fluid' src='images/Celsus.jpg' style='width: 180px;'>",
 							  [
 							  	"Italy",
 							  	"Jerusalem",
@@ -462,7 +462,7 @@ var questions = [
 	// 						  ], 
 	// 						  "A measure for the piquancy of various peppers, indicating the level of capsaicin.", 
 	// 						  "The Scoville scale is a measurement of the pungency (spiciness or 'heat') of chili peppers and other spicy foods, as recorded in Scoville Heat Units (SHU)."),	
-	new Question("What country is this?<br><img class='img-fluid' src='images/Vietnam.gif' style='width: 310px;'>", 
+	new Question("What country is this?<br><img class='img-fluid' src='images/Vietnam.svg.png' style='width: 230px;'>", 
 							  [
 							  	"Laos",
 							  	"Cambodia.",
