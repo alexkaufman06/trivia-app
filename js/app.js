@@ -255,6 +255,15 @@ var questions = [
 							  ],
 							  "The White House",
 							  "The White House is located at 1600 Pennsylvania Avenue NW in Washington, D.C. (formally the District of Columbia)."),
+	new Question("Who is a Mexican artist known for self-portraits, pain and passion, and bold, vibrant colors?",
+							  [
+							  	"Georgia O'Keeffe",
+							  	"Frida Kahlo",
+							  	"Mary Cassatt",
+							  	"Joan Mitchell"
+							  ],
+							  "Frida Kahlo",
+							  "Frida exlpored questions of identity, postcolonialism, gender, calss and race in Mexican society."),
 	// new Question("",
 	// 						  [
 	// 						  	"",
