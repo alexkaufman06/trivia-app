@@ -264,6 +264,15 @@ var questions = [
 							  ],
 							  "Frida Kahlo",
 							  "Frida exlpored questions of identity, postcolonialism, gender, calss and race in Mexican society."),
+	new Question("What is an adjective used to describe a person or thing that's impulsive and unpredictable.",
+							  [
+							  	"Capricious",
+							  	"Nonchalant",
+							  	"Evanescent",
+							  	"Recondite"
+							  ],
+							  "Capricious",
+							  "A bride who leaves her groom standing at the wedding altar could be considered capricious."),
 	// new Question("",
 	// 						  [
 	// 						  	"",
