@@ -39,17 +39,15 @@ NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
 }
 
 function detectmobile() { 
- if( navigator.userAgent.match(/Android/i)
- || navigator.userAgent.match(/webOS/i)
- || navigator.userAgent.match(/iPhone/i)
- || navigator.userAgent.match(/iPad/i)
- || navigator.userAgent.match(/iPod/i)
- || navigator.userAgent.match(/BlackBerry/i)
- || navigator.userAgent.match(/Windows Phone/i)
- ){
-    return true;
-  }
- else {
+  if ( navigator.userAgent.match(/Android/i)
+    || navigator.userAgent.match(/webOS/i)
+    || navigator.userAgent.match(/iPhone/i)
+ 		|| navigator.userAgent.match(/iPad/i)
+ 		|| navigator.userAgent.match(/iPod/i)
+ 		|| navigator.userAgent.match(/BlackBerry/i)
+		|| navigator.userAgent.match(/Windows Phone/i)) {
+    	return true;
+  } else {
     return false;
   }
 }
@@ -183,6 +181,15 @@ function showScores() {
 };
 
 var questions = [
+	new Question("What is the capital of Iceland?",
+							  [
+							  	"K&oacute;pavogur",
+							  	"Vik",
+							  	"Reykjanesb&aelig;r",
+							  	"Reykjav&iacute;k"
+							  ],
+							  "Reykjav&iacute;k",
+							  "The striking concrete Hallgrimskirkja church sits on the highest point of the city."),
 	new Question("How many sharps are in the key of E major?",
 							  [
 							  	"1",
