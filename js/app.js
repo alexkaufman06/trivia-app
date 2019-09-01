@@ -24,6 +24,7 @@ Preloading: https://blog.uptrends.com/web-performance/improving-web-performance-
 		-Bzantibe generals problem
 		-Words and definitions on phone
 		-Hans Island between greenland (danish) and canada - disputed territory 
+		-Images from iceland landmarks (church, sun voyager)
 */
 
 Element.prototype.remove = function() {
